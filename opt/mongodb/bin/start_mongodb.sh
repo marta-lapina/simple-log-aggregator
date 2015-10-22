@@ -1,12 +1,12 @@
 docker run -d \
     --name mongodb \
     -p 27017:27017 \
-	-p 28017:28017 \
+    -p 28017:28017 \
     -e MONGODB_USERNAME=mongo \
     -e MONGODB_PASSWORD=password \
     -e MONGODB_DBNAME=main \
-	-v /opt/mongodb/data:/data \
-	-v /opt/mongodb/logs:/var/log/mongodb \
+    -v /opt/mongodb/data:/data \
+    -v /opt/mongodb/logs:/var/log/mongodb \
     frodenas/mongodb \
-	--httpinterface \
-	--smallfiles
+    --httpinterface \
+    --smallfiles
